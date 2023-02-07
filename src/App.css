@@ -37,8 +37,30 @@
   }
 }
 
+.cardContainer {
+  position: relative;
+}
+
+.cardImage {
+  width: 100%;
+  height: 60%;
+}
+
 .cardTitle {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cardCategory {
+  font-size: 0.8rem;
+}
+
+.cardCategory span {
+  font-weight: 700;
+}
+
+.cardPrice {
+  width: 40%;
+  position: absolute;
+  bottom: 15px;
 }

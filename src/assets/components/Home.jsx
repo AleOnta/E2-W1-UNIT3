@@ -18,13 +18,23 @@ class Home extends Component {
 
         <Row>
           {fantasy.map((book) => (
-            <Col key={"asin: " + book.asin} xs="4" lg="3" className="p-0 mb-3 d-flex justify-content-center">
+            <Col
+              key={"asin: " + book.asin}
+              xs="4"
+              lg="3"
+              className="p-0 mb-3 d-flex justify-content-center cardContainer"
+            >
               <Card style={{ width: "15rem" }}>
-                <Card.Img variant="top" src={book.img} className="cardTitle" />
+                <Card.Img variant="top" src={book.img} className="cardImage" />
                 <Card.Body>
-                  <Card.Title>{book.title}</Card.Title>
-                  <Card.Text>{book.category}</Card.Text>
-                  <Button variant="primary">{book.price}€</Button>
+                  <Card.Title className="cardTitle">{book.title}</Card.Title>
+                  <Card.Text className="cardCategory">
+                    <span>Category: </span>
+                    {book.category}
+                  </Card.Text>
+                  <Button variant="primary" className="cardPrice">
+                    {book.price}€
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>

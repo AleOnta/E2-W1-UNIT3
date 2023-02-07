@@ -3,23 +3,23 @@ import { Component } from "react";
 class FooterComponent extends Component {
   render() {
     return (
-      <footer class="bg-light text-center fixed-bottom">
-        <div class="container pt-4">
-          <section class="">
+      <footer className="bg-light text-center fixed-bottom">
+        <div className="container pt-4">
+          <section className="">
             <form action="">
-              <div class="row d-flex justify-content-center">
-                <div class="col-auto">
-                  <p class="pt-2">
+              <div className="row d-flex justify-content-center">
+                <div className="col-auto">
+                  <p className="pt-2">
                     <strong>Sign up for our newsletter</strong>
                   </p>
                 </div>
-                <div class="col-md-5 col-12">
-                  <div class="form-outline mb-4">
-                    <input type="email" class="form-control" placeholder={this.props.placeholder} />
+                <div className="col-md-5 col-12">
+                  <div className="form-outline mb-4">
+                    <input type="email" className="form-control" placeholder={this.props.placeholder} />
                   </div>
                 </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-4">
+                <div className="col-auto">
+                  <button type="submit" className="btn btn-primary mb-4">
                     Subscribe
                   </button>
                 </div>
@@ -27,9 +27,9 @@ class FooterComponent extends Component {
             </form>
           </section>
         </div>
-        <div class="text-center p-3">
+        <div className="text-center p-3">
           © 2023 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">
+          <a className="text-dark" href="https://mdbootstrap.com/">
             MDBootstrap.com
           </a>
         </div>
