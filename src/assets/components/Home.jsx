@@ -18,7 +18,7 @@ class Home extends Component {
 
         <Row>
           {fantasy.map((book) => (
-            <Col xs="4" lg="3" className="p-0 mb-3 d-flex justify-content-center">
+            <Col key={"asin: " + book.asin} xs="4" lg="3" className="p-0 mb-3 d-flex justify-content-center">
               <Card style={{ width: "15rem" }}>
                 <Card.Img variant="top" src={book.img} className="cardTitle" />
                 <Card.Body>
